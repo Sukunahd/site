@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан Cilekli | Аутентичная турецкая кухня</title>
+    <meta name="description" content="Ресторан Cilekli - аутентичная турецкая кухня в уютной атмосфере. Забронируйте столик онлайн.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="aspinall.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" id="header__logo">
+                    <img src="logo.jpg" alt="Логотип Cilekli">
+                    <span id="header__name">Cilekli</span>
+                </div>
+                
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li><a href="#home" class="nav__link active">Главная</a></li>
+                        <li><a href="#menu" class="nav__link">Меню</a></li>
+                        <li><a href="#about" class="nav__link">О нас</a></li>
+                        <li><a href="#reservation" class="nav__link">Бронирование</a></li>
+                        <li><a href="#contact" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header__contacts">
+                    <a href="tel:+7123456789" class="contact__phone">
+                        <i class="fas fa-phone"></i>
+                        +7 (123) 456-78-9
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Открыть меню">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+        
+        <section id="home" class="home">
+            <div class="home__overlay"></div>
+            <div class="container">
+                <div class="home__content">
+                    <h1 class="home__title" id="fadeText">Мезе, которое манит: Вся Турция на одной тарелке!</h1>
+                    <p class="home__subtitle">Добро пожаловать в ресторан Cilekli</p>
+                    <div class="home__buttons">
+                        <a href="#reservation" class="btn btn--primary">Забронировать столик</a>
+                        <a href="#menu" class="btn btn--secondary">Посмотреть меню</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наше меню</h2>
+                    <p class="section-subtitle">Попробуйте лучшие блюда турецкой кухни</p>
+                </div>
+                
+                <div class="menu__filters">
+                    <button class="filter-btn active" data-filter="all">Все блюда</button>
+                    <button class="filter-btn" data-filter="meze">Мезе</button>
+                    <button class="filter-btn" data-filter="grill">Гриль</button>
+                    <button class="filter-btn" data-filter="dessert">Десерты</button>
+                    <button class="filter-btn" data-filter="drink">Напитки</button>
+                </div>
+                
+                <div class="menu__items">
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">О нас</h2>
+                    <p class="section-subtitle">Наша история и философия</p>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__image">
+                        <img src="wallpapper.jpg" alt="Интерьер ресторана Cilekli">
+                    </div>
+                    <div class="about__text">
+                        <h3>Традиции турецкого гостеприимства</h3>
+                        <p>Ресторан Cilekli был основан в 2010 году с целью познакомить гостей с настоящей турецкой кухней. Наше название переводится как "с клубникой" - символ сладости и гостеприимства.</p>
+                        <p>Мы тщательно отбираем ингредиенты и готовим по традиционным рецептам, которые передаются из поколения в поколение. Наш шеф-повар обучался искусству приготовления блюд в Стамбуле и Анкаре.</p>
+                        <div class="about__features">
+                            <div class="feature">
+                                <i class="fas fa-utensils"></i>
+                                <span>Аутентичные рецепты</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-leaf"></i>
+                                <span>Свежие продукты</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-wine-glass-alt"></i>
+                                <span>Турецкие напитки</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="reservation" class="reservation">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Бронирование столика</h2>
+                    <p class="section-subtitle">Забронируйте столик онлайн</p>
+                </div>
+                
+                <form class="reservation__form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Время</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" name="guests" required>
+                                <option value="1">1 человек</option>
+                                <option value="2">2 человека</option>
+                                <option value="3">3 человека</option>
+                                <option value="4">4 человека</option>
+                                <option value="5">5 человек</option>
+                                <option value="6">6+ человек</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Особые пожелания</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn--primary btn--full">Забронировать</button>
+                </form>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Контакты</h2>
+                    <p class="section-subtitle">Свяжитесь с нами</p>
+                </div>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Адрес</h3>
+                                <p>ул. Примерная, д. 123, Москва</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Телефон</h3>
+                                <p>+7 (123) 456-78-9</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@cilekli.ru</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Часы работы</h3>
+                                <p>Пн-Чт: 11:00 - 23:00</p>
+                                <p>Пт-Сб: 11:00 - 00:00</p>
+                                <p>Вс: 11:00 - 22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__map">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Здесь будет карта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <img src="logo.jpg" alt="Логотип Cilekli">
+                        <span>Cilekli</span>
+                    </div>
+                    <p>Аутентичная турецкая кухня в сердце Москвы.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="VKontakte"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#reservation">Бронирование</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> ул. Примерная, д. 123, Москва</li>
+                        <li><i class="fas fa-phone"></i> +7 (123) 456-78-9</li>
+                        <li><i class="fas fa-envelope"></i> info@cilekli.ru</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3>Часы работы</h3>
+                    <ul>
+                        <li>Пн-Чт: 11:00 - 23:00</li>
+                        <li>Пт-Сб: 11:00 - 00:00</li>
+                        <li>Вс: 11:00 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2023 Ресторан Cilekli. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="aspinall.js"></script>
+</body>
+</html>
